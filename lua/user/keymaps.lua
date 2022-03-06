@@ -35,6 +35,17 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
+-- Goto buffer number
+keymap("n", "<silent><leader>1", "<Cmd>BufferLineGoToBuffer 1<CR>", opts)
+keymap("n", "<silent><leader>2", "<Cmd>BufferLineGoToBuffer 2<CR>", opts)
+keymap("n", "<silent><leader>3", "<Cmd>BufferLineGoToBuffer 3<CR>", opts)
+keymap("n", "<silent><leader>4", "<Cmd>BufferLineGoToBuffer 4<CR>", opts)
+keymap("n", "<silent><leader>5", "<Cmd>BufferLineGoToBuffer 5<CR>", opts)
+keymap("n", "<silent><leader>6", "<Cmd>BufferLineGoToBuffer 6<CR>", opts)
+keymap("n", "<silent><leader>7", "<Cmd>BufferLineGoToBuffer 7<CR>", opts)
+keymap("n", "<silent><leader>8", "<Cmd>BufferLineGoToBuffer 8<CR>", opts)
+keymap("n", "<silent><leader>9", "<Cmd>BufferLineGoToBuffer 9<CR>", opts)
+
 -- Move text up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
