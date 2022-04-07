@@ -131,8 +131,16 @@ g = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
     d = {
-      "<cmd>Telescope lsp_document_diagnostics<cr>",
-      "Document Diagnostics",
+      "<cmd>Copilot disable<cr>",
+      "Disable Co-pilot",
+    },
+    e = {
+      "<cmd>Copilot enable<cr>",
+      "Enable Co-pilot",
+    },
+    c = {
+      "<cmd>Copilot<cr>",
+      "Co-pilot status",
     },
     w = {
       "<cmd>Telescope lsp_workspace_diagnostics<cr>",
