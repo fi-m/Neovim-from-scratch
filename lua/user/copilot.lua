@@ -2,9 +2,8 @@
 -- if not copilot_status_ok then
 --     return
 -- end
+
 -- Fix copilot w/o tab completion
-
-
 vim.g.copilot_assume_mapped = true
 vim.g.copilot_no_tab_map = true
 
@@ -27,4 +26,5 @@ vim.api.nvim_set_keymap("i", "<C-F", 'copilot#Previous()', { silent = true, expr
     ["go"] = true,
     ["python"] = true,
     ["vue"] = true,
+    ["java"] = true,
 }
