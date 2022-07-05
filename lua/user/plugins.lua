@@ -104,9 +104,10 @@ return packer.startup(function(use)
 	-- NVIM-Remote-Containers
 	use("jamestthompson3/nvim-remote-containers")
 
--- Debugging
-  use("mfussenegger/nvim-dap")
-  use("mfussenegger/nvim-dap-python")
+	-- Debugging
+	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
+	use("mfussenegger/nvim-dap-python")
+	use("nvim-telescope/telescope-dap.nvim")
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
