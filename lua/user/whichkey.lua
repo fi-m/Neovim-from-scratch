@@ -217,6 +217,13 @@ local mappings = {
 		h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
 		v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
 	},
+
+	k = {
+		name = "KNAP",
+		c = { "<cmd>lua require'knap'.process_once() <cr>", "Compile" },
+		s = { "<cmd>lua require'knap'.toggle_autopreviewing()<cr>", "Start/Stop Autopreviewing" },
+		o = { "<cmd>lua require'knap'.close_viewer()<cr>", "Close Viewer" },
+	},
 }
 
 which_key.setup(setup)
