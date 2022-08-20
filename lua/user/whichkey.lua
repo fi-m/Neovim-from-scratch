@@ -158,14 +158,6 @@ local mappings = {
 			"<cmd>Telescope lsp_document_diagnostics<cr>",
 			"Document Diagnostics",
 		},
-		d = {
-			"<cmd>Copilot disable<cr>",
-			"Disable Co-pilot",
-		},
-		e = {
-			"<cmd>Copilot enable<cr>",
-			"Enable Co-pilot",
-		},
 		c = {
 			"<cmd>Copilot<cr>",
 			"Co-pilot status",
@@ -176,7 +168,7 @@ local mappings = {
 		},
 		f = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Format" },
 		i = { "<cmd>LspInfo<cr>", "Info" },
-		I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
+		I = { "<cmd>Mason<cr>", "Installer Info" },
 		j = {
 			"<cmd>lua vim.lsp.diagnostic.goto_next()<CR>",
 			"Next Diagnostic",

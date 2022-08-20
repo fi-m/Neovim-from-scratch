@@ -19,6 +19,9 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Normal --
+-- Remap undo/redo
+keymap("n", "<leader>u", ":undo<CR>", opts)
+keymap("n", "<leader>r", ":redo<CR>", opts)
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
