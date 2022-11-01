@@ -9,7 +9,7 @@ local setup = {
 		registers = true, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
 		spelling = {
 			enabled = true, -- enabling this will show WhichKey when pressing z= to select spelling suggestions
-			suggestions = 20, -- how many suggestions should be shown in the list?
+			suggestions = 5, -- how many suggestions should be shown in the list?
 		},
 		-- the presets plugin, adds help for a bunch of default keybindings in Neovim
 		-- No actual key bindings are created
@@ -34,9 +34,9 @@ local setup = {
 		-- ["<tab>"] = "TAB",
 	},
 	icons = {
-		breadcrumb = "»", -- symbol used in the command line area that shows your active key combo
-		separator = "➜", -- symbol used between a key and it's label
-		group = "+", -- symbol prepended to a group
+		breadcrumb = "+", -- symbol used in the command line area that shows your active key combo
+		separator = "➜ ", -- symbol used between a key and it's label
+		group = " ", -- symbol prepended to a group
 	},
 	popup_mappings = {
 		scroll_down = "<c-d>", -- binding to scroll down inside the popup
@@ -67,6 +67,12 @@ local setup = {
 		i = { "j", "k" },
 		v = { "j", "k" },
 	},
+  -- disable the WhichKey popup for certain buf types and file types.
+  -- Disabled by deafult for Telescope
+  disable = {
+    buftypes = {},
+    filetypes = { "TelescopePrompt" },
+  },
 }
 
 local opts = {

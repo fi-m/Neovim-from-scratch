@@ -28,7 +28,7 @@ vim.fn.sign_define("dapbreakpoint", dap_breakpoint.error)
 vim.fn.sign_define("dapstopped", dap_breakpoint.stopped)
 vim.fn.sign_define("dapbreakpointrejected", dap_breakpoint.rejected)
 ]]
-local dapui = require "dapui"
+local dapui = require("dapui")
   dapui.setup {} -- use default
   dap.listeners.after.event_initialized["dapui_config"] = function()
     dapui.open()

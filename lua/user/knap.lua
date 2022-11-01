@@ -20,6 +20,9 @@ local gknapsettings = {
 	markdowntopdfviewerlaunch = "open -a Preview %outputfile",
 	markdowntopdfviewerrefresh = "none",
 	texoutputext = "pdf",
+  textopdf = "pdflatex -synctex=1 -halt-on-error -interaction=batchmode %docroot%",
+  textopdfviewerlaunch = "open -a Preview %outputfile%",
+  textopdfviewerrefresh = "none",
 	delay = 250,
 }
 vim.g.knap_settings = gknapsettings

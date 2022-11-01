@@ -14,9 +14,8 @@ bufferline.setup({
 		-- NOTE: this plugin is designed with this icon in mind,
 		-- and so changing this is NOT recommended, this is intended
 		-- as an escape hatch for people who cannot bear it for whatever reason
-		indicator_icon = "▎",
+		icon = "|",
 		buffer_close_icon = "",
-		-- buffer_close_icon = '',
 		modified_icon = "●",
 		close_icon = "",
 		-- close_icon = '',
@@ -32,10 +31,10 @@ bufferline.setup({
 		--     return vim.fn.fnamemodify(buf.name, ':t:r')
 		--   end
 		-- end,
-		max_name_length = 18,
-		max_prefix_length = 10, -- prefix used when a buffer is de-duplicated
-		tab_size = 20,
-    buffer_size = 20,
+		max_name_length = 12,
+		max_prefix_length = 5, -- prefix used when a buffer is de-duplicated
+		tab_size = 15,
+    buffer_size = 15,
 		diagnostics = "nvim_lsp", -- | "nvim_lsp" | "coc",
 		diagnostics_update_in_insert = false,
 		-- diagnostics_indicator = function(count, level, diagnostics_dict, context)
@@ -77,7 +76,7 @@ bufferline.setup({
 		-- [focused and unfocused]. eg: { '|', '|' }
 		separator_style = "thin", -- | "thick" | "thin" | { 'any', 'any' },
 		enforce_regular_tabs = false,
-		always_show_bufferline = true,
+		always_show_bufferline = false,
 		-- sort_by = 'id' | 'extension' | 'relative_directory' | 'directory' | 'tabs' | function(buffer_a, buffer_b)
 		--   -- add custom logic
 		--   return buffer_a.modified > buffer_b.modified
