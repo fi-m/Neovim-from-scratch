@@ -76,7 +76,7 @@ return packer.startup(function(use)
 	use("saadparwaiz1/cmp_luasnip") -- snippet completions
 	use("hrsh7th/cmp-nvim-lsp")
 
-  -- Toggle Term
+	-- Toggle Term
 	use {"akinsho/toggleterm.nvim", tag = "v2.*"}
 	-- snippets
 	use("L3MON4D3/LuaSnip") --snippet engine
@@ -84,9 +84,9 @@ return packer.startup(function(use)
 
 	-- LSP
 	use("neovim/nvim-lspconfig") -- enable LSP
-    -- Mason.nvim
-  use { "williamboman/mason.nvim" }
-  use { "williamboman/mason-lspconfig.nvim" }
+	-- Mason.nvim
+	use { "williamboman/mason.nvim" }
+	use { "williamboman/mason-lspconfig.nvim" }
 
 	use("tamago324/nlsp-settings.nvim") -- language server settings defined in json for
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
@@ -95,10 +95,10 @@ return packer.startup(function(use)
 	use("nvim-telescope/telescope.nvim")
 
 	-- Treesitter
-	use({
+	use {
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
-	})
+	}
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 
 	-- Git
@@ -115,9 +115,12 @@ return packer.startup(function(use)
 	use("mfussenegger/nvim-dap-python")
 	use("nvim-telescope/telescope-dap.nvim")
 
-  -- Markdown, LaTeX, and HTML preview
-  -- Requires: Pandoc, Sioyek
-  use("frabjous/knap")
+	-- Markdown, LaTeX, and HTML preview
+	-- Requires: Pandoc, Sioyek
+	use("frabjous/knap")
+
+	-- Git
+	use { "lewis6991/gitsigns.nvim" }
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
