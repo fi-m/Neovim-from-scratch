@@ -216,12 +216,19 @@ local mappings = {
 		v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
 	},
 
-	k = {
-		name = "KNAP",
-		c = { "<cmd>lua require'knap'.process_once() <cr>", "Compile" },
-		s = { "<cmd>lua require'knap'.toggle_autopreviewing()<cr>", "Start/Stop Autopreviewing" },
-		o = { "<cmd>lua require'knap'.close_viewer()<cr>", "Close Viewer" },
-	},
+	-- k = {
+	-- 	name = "KNAP",
+	-- 	c = { "<cmd>lua require'knap'.process_once() <cr>", "Compile" },
+	-- 	s = { "<cmd>lua require'knap'.toggle_autopreviewing()<cr>", "Start/Stop Autopreviewing" },
+	-- 	o = { "<cmd>lua require'knap'.close_viewer()<cr>", "Close Viewer" },
+	-- },
+
+  k = {
+    name = "VimTeX",
+    c = { "<cmd>VimtexCompile<cr>", "Compile" },
+    s = { "<cmd>VimtexStop<cr>", "Stop" },
+    v = { "<cmd>VimtexView<cr>", "Open Viewer" },
+  },
 }
 
 which_key.setup(setup)

@@ -1,5 +1,6 @@
 local servers = {
-	"sumneko_lua",
+	-- "sumneko_lua",
+  "lua_ls",
 	-- "cssls",
 	-- "html",
 	-- "tsserver",
@@ -7,6 +8,9 @@ local servers = {
 	-- "bashls",
 	"jsonls",
 	-- "yamlls",
+	"texlab",
+	"marksman",
+	"pylsp",
 }
 
 local settings = {

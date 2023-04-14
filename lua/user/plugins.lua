@@ -117,8 +117,8 @@ return packer.startup(function(use)
 
 	-- Markdown, LaTeX, and HTML preview
 	-- Requires: Pandoc, Sioyek
-	use("frabjous/knap")
-
+	-- use("frabjous/knap")
+  use 'lervag/vimtex'
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

@@ -20,7 +20,7 @@ local gknapsettings = {
 	markdowntopdfviewerlaunch = "open -a Preview %outputfile",
 	markdowntopdfviewerrefresh = "none",
 	texoutputext = "pdf",
-  textopdf = "pdflatex -synctex=1 -halt-on-error -interaction=batchmode %docroot%",
+  textopdf = "tectonic -X build",
   textopdfviewerlaunch = "open -a Preview %outputfile%",
   textopdfviewerrefresh = "none",
 	delay = 250,
