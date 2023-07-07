@@ -57,8 +57,8 @@ return packer.startup(function(use)
 	use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
 	use("folke/which-key.nvim")
 
-  -- Bufferline
-  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+	-- Bufferline
+	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
 
 	-- Colorschemes
 	use("lunarvim/colorschemes") -- A bunch of colorschemes you can try out
@@ -77,7 +77,7 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-nvim-lsp")
 
 	-- Toggle Term
-	use {"akinsho/toggleterm.nvim", tag = "v2.*"}
+	use({ "akinsho/toggleterm.nvim", tag = "v2.*" })
 	-- snippets
 	use("L3MON4D3/LuaSnip") --snippet engine
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
@@ -85,8 +85,8 @@ return packer.startup(function(use)
 	-- LSP
 	use("neovim/nvim-lspconfig") -- enable LSP
 	-- Mason.nvim
-	use { "williamboman/mason.nvim" }
-	use { "williamboman/mason-lspconfig.nvim" }
+	use({ "williamboman/mason.nvim" })
+	use({ "williamboman/mason-lspconfig.nvim" })
 
 	use("tamago324/nlsp-settings.nvim") -- language server settings defined in json for
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
@@ -95,10 +95,10 @@ return packer.startup(function(use)
 	use("nvim-telescope/telescope.nvim")
 
 	-- Treesitter
-	use {
+	use({
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
-	}
+	})
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 
 	-- Git
@@ -118,7 +118,7 @@ return packer.startup(function(use)
 	-- Markdown, LaTeX, and HTML preview
 	-- Requires: Pandoc, Sioyek
 	-- use("frabjous/knap")
-  use 'lervag/vimtex'
+	use("lervag/vimtex")
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

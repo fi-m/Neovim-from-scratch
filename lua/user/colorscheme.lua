@@ -7,15 +7,15 @@
 -- endtry
 -- ]]
 --
--- require('monokai').setup { palette = require('monokai').soda }
+require('monokai').setup { palette = require('monokai').soda }
 
-require("github-theme").setup({
-	function_style = "italic",
-	sidebars = { "qf", "vista_kind", "terminal", "packer" },
-
-	-- Change the "hint" color to the "orange" color, and make the "error" color bright red
-	colors = { hint = "orange", error = "#ff0000" },
-})
+-- require("github-theme").setup({
+-- 	function_style = "italic",
+-- 	sidebars = { "qf", "vista_kind", "terminal", "packer" },
+-- 
+-- 	-- Change the "hint" color to the "orange" color, and make the "error" color bright red
+-- 	colors = { hint = "orange", error = "#ff0000" },
+-- })
 
 -- Load and setup function to choose plugin and language highlights for codeschool
 -- require('lush')(require('codeschool').setup({
