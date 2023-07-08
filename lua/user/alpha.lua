@@ -23,12 +23,16 @@ dashboard.section.buttons.val = {
 }
 
 local function footer()
-	-- NOTE: requires the fortune-mod package to work
-	-- local handle = io.popen("fortune")
-	-- local fortune = handle:read("*a")
-	-- handle:close()
-	-- return fortune
-	return "Math is hard, let's go shopping!"
+  -- Fetch the weather using wttr.in for the given location.
+  local weather = vim.fn.systemlist("curl -s 'wttr.in/?format=3'")
+  -- Trim the output string.
+  weather = vim.trim(weather[1] or "")
+  -- If we have an empty string, then set it to "N/A".
+  if weather == "" then
+    weather = "N/A"
+  end
+  -- Return the weather string.
+  return weather
 end
 
 dashboard.section.footer.val = footer()
