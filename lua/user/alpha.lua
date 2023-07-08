@@ -4,14 +4,14 @@ if not status_ok then
 end
 
 local dashboard = require("alpha.themes.dashboard")
-dashboard.section.header.val = {
-	[[       .                 ]],
-	[[      ":"                ]],
-	[[    ___:____     |"\/"|  ]],
-	[[  ,'        `.    \  /   ]],
-	[[  |  O        \___/  |   ]],
-	[[~^~^~^~^~^~^~^~^~^~^~^~^~]],
-}
+-- dashboard.section.header.val = {
+-- 	[[       .                 ]],
+-- 	[[      ":"                ]],
+-- 	[[    ___:____     |"\/"|  ]],
+-- 	[[  ,'        `.    \  /   ]],
+-- 	[[  |  O        \___/  |   ]],
+-- 	[[~^~^~^~^~^~^~^~^~^~^~^~^~]],
+-- }
 dashboard.section.buttons.val = {
 	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
 	dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),

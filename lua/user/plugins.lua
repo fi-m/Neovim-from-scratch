@@ -56,6 +56,7 @@ return packer.startup(function(use)
 	use("goolord/alpha-nvim")
 	use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
 	use("folke/which-key.nvim")
+  use({"christoomey/vim-tmux-navigator", lazy = false})
 
 	-- Bufferline
 	use({ "akinsho/bufferline.nvim", tag = "*", requires = "nvim-tree/nvim-web-devicons" })
@@ -77,7 +78,7 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-nvim-lsp")
 
 	-- Toggle Term
-	use({ "akinsho/toggleterm.nvim", tag = "v2.*" })
+	-- use({ "akinsho/toggleterm.nvim", tag = "v2.*" })
 	-- snippets
 	use("L3MON4D3/LuaSnip") --snippet engine
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
