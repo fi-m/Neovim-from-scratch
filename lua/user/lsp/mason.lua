@@ -1,6 +1,6 @@
 local servers = {
 	-- "sumneko_lua",
-  "lua_ls",
+	"lua_ls",
 	-- "cssls",
 	-- "html",
 	-- "tsserver",
