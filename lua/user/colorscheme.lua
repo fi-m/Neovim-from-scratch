@@ -4,6 +4,8 @@ require('github-theme').setup({
       comments = 'italic',
       keywords = 'bold',
       types = 'italic,bold',
+      functions = 'italic,bold',
+      variables = 'italic',
     },
     modules = {
       cmp = true,
