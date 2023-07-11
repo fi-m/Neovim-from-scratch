@@ -24,7 +24,7 @@ dashboard.section.buttons.val = {
 
 local function footer()
   -- Fetch the weather using wttr.in for the given location.
-  local weather = vim.fn.systemlist("curl -s 'wttr.in/?format=3'")
+  local weather = vim.fn.systemlist("curl --max-time 0.3 -s 'wttr.in/?format=3'")
   -- Trim the output string.
   weather = vim.trim(weather[1] or "")
   -- If we have an empty string, then set it to "N/A".
